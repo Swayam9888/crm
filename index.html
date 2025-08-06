@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Relationship Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Customer Relationship Manager</h1>
+    <section class="customer-list">
+        <h2>Customer List</h2>
+        <table id="customerTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Swayam Bharuka</td>
+                <td>bharukaswayam@gmail.com</td>
+                <td>
+                    <button onclick="editCustomer(this)">Edit</button>
+                    <button onclick="deleteCustomer(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Shreyas Mukurne</td>
+                <td>shreyasmukurne@gmail.com</td>
+                <td>
+                    <button onclick="editCustomer(this)">Edit</button>
+                    <button onclick="deleteCustomer(this)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="add-customer">
+        <h2>Add New Customer</h2>
+        <form id="addCustomerForm">
+            <input type="text" id="customerName" placeholder="Name" required>
+            <input type="email" id="customerEmail" placeholder="Email" required>
+            <button type="submit">Add Customer</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
