@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Bliss | Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="index.html">Bistro<span>Bliss</span></a>
+            <nav id="primaryNav" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn-primary small" href="contact.html#reservation">Reserve</a>
+            </nav>
+            <button id="navToggle" aria-label="Toggle navigation" class="hamburger" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Our Menu</h1>
+        <div class="filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="starters">Starters</button>
+            <button class="chip" data-filter="mains">Mains</button>
+            <button class="chip" data-filter="desserts">Desserts</button>
+            <button class="chip" data-filter="drinks">Drinks</button>
+        </div>
+        <div id="menuGrid" class="menu-grid">
+            <article class="dish-card" data-category="starters">
+                <img src="https://images.unsplash.com/photo-1543330938-8b29c2b6d7f8?q=80&w=1200&auto=format&fit=crop" alt="Bruschetta">
+                <h3>Tomato Bruschetta</h3>
+                <p>Grilled sourdough, garlic, basil.</p>
+                <div class="price">$7</div>
+            </article>
+            <article class="dish-card" data-category="mains">
+                <img src="https://images.unsplash.com/photo-1604908554049-0b3c79a5a1a1?q=80&w=1200&auto=format&fit=crop" alt="Pasta">
+                <h3>Truffle Alfredo</h3>
+                <p>Fettuccine, parmigiano, black truffle.</p>
+                <div class="price">$16</div>
+            </article>
+            <article class="dish-card" data-category="mains">
+                <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1200&auto=format&fit=crop" alt="Burger">
+                <h3>Smash Burger</h3>
+                <p>House pickles, cheddar, brioche.</p>
+                <div class="price">$13</div>
+            </article>
+            <article class="dish-card" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?q=80&w=1200&auto=format&fit=crop" alt="Cheesecake">
+                <h3>Berry Cheesecake</h3>
+                <p>Silky baked cheesecake, compote.</p>
+                <div class="price">$9</div>
+            </article>
+            <article class="dish-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1200&auto=format&fit=crop" alt="Lemonade">
+                <h3>Mint Lemonade</h3>
+                <p>Fresh lemons, garden mint.</p>
+                <div class="price">$5</div>
+            </article>
+            <article class="dish-card" data-category="starters">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Soup">
+                <h3>Roasted Tomato Soup</h3>
+                <p>Herbed croutons, cream.</p>
+                <div class="price">$8</div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">Bistro<span>Bliss</span></a>
+                <p>Open daily 11am–11pm • 123 Market Street</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html#reservation">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
