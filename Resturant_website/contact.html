@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Bliss | Contact & Reservations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="index.html">Bistro<span>Bliss</span></a>
+            <nav id="primaryNav" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a class="btn btn-primary small" href="#reservation">Reserve</a>
+            </nav>
+            <button id="navToggle" aria-label="Toggle navigation" class="hamburger" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Contact Us</h1>
+        <p>Email: BristoBliss@gmail.com • Phone: (+91) 1234567890</p>
+
+        <section id="reservation" class="reservation">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm" novalidate>
+                <div class="form-grid">
+                    <label>
+                        Name
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Date
+                        <input type="date" name="date" required>
+                    </label>
+                    <label>
+                        Time
+                        <input type="time" name="time" required>
+                    </label>
+                    <label>
+                        Guests
+                        <input type="number" name="guests" min="1" max="12" value="2" required>
+                    </label>
+                    <label>
+                        Notes
+                        <input type="text" name="notes" placeholder="Allergies, occasion...">
+                    </label>
+                </div>
+                <button class="btn btn-primary" type="submit">Book Table</button>
+                <p id="reserveMsg" class="form-msg" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">Bistro<span>Bliss</span></a>
+                <p>Open daily 11am–11pm • 123 Market Street</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html#reservation">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
